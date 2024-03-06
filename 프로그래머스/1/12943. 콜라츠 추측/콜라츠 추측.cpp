@@ -5,24 +5,25 @@ using namespace std;
 
 int solution(int num) {
     int count = 0;
-    while(count < 450)
+    long long tartget = num;
+    while(count < 500)
     {
-        if ( num == 1)
+        if ( tartget == 1)
         {
             break;
         }
-        else if ( num % 2 == 0)
+        else if ( tartget % 2 == 0)
         {
-            num = num / 2;
+            tartget = tartget / 2;
         }
         else
         {
-            num = num * 3 + 1;
+            tartget = (tartget * 3) + 1;
         }
         count++;
     }
     
-    if (count == 450)
+    if (count == 500)
     {
         return -1;
     }
