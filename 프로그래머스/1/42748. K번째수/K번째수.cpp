@@ -14,11 +14,7 @@ vector<int> solution(vector<int> array, vector<vector<int>> commands) {
         
         vector<int> sorted_v = array;
         sort(sorted_v.begin()+i-1, sorted_v.begin()+j);
-        
-        for (auto e:sorted_v)
-            printf("%i", e);
-        printf(" ");
-        
+
         answer.push_back(sorted_v[i+k-2]);
     }
     return answer;
